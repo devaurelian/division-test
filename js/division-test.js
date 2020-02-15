@@ -17,14 +17,16 @@ class DivisionTest extends LitElement {
   static get styles() {
     return css`
       .test {
-        // border: 10px solid;
         color: #212529;
         font-family: 'Dokdo', cursive;
-        // font-family: monospace;
-        font-size: 4rem;
-        // letter-spacing: 2.8rem;
-        // padding: 1rem;
+        font-size: 2rem;
         margin-bottom: 0.5rem;
+      }
+
+      @media (min-width: 768px) {
+        .test {
+          font-size: 4rem;
+        }
       }
 
       .test[data-correct='true'] {
@@ -52,10 +54,7 @@ class DivisionTest extends LitElement {
         appearance: none;
         border: none;
         outline: none;
-        // border-bottom: 2px solid;
-        // border-color: inherit;
         width: 7rem;
-        // text-align: right;
       }
 
       [data-correct='false'] .quotient-input {
@@ -112,10 +111,6 @@ class DivisionTest extends LitElement {
   keyDownHandler(event) {
     if (event.code == 'Enter') {
       this.checkAnswer();
-      // const quotientInput = this.shadowRoot.getElementById("quotient");
-      // console.log(quotientInput);
-
-
     }
 
   }
