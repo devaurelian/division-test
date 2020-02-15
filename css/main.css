@@ -1,0 +1,35 @@
+html {
+    background-size: 1.5rem 1.5rem;
+    background-image:
+      linear-gradient(to right, #bbb 1px, transparent 1px),
+      linear-gradient(to bottom, #bbb 1px, transparent 1px);
+}
+
+body {
+    border-left: 3px solid rgba(255, 0, 0, 0.5);
+    font-family: 'Dokdo', cursive;
+    margin-left: 4.5rem;
+    min-height: 100vh;
+    padding: 3rem;
+  }
+
+h1 {
+    font-size: 4rem;
+    margin: 0 0 1rem 0;
+}
+
+header {
+    position: fixed;
+    padding: 1rem;
+    top: 0;
+    right: 0;
+    font-size: 2rem;
+}
+
+#correct-count {
+    color: green;
+}
+
+#incorrect-count {
+    color: red;
+}
