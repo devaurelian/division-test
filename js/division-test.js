@@ -1,5 +1,4 @@
 import { LitElement, html, css, unsafeCSS } from 'https://unpkg.com/lit-element?module';
-import { styleMap } from 'https://unpkg.com/lit-html/directives/style-map?module';
 
 import * as Utils from '/js/utils.js';
 
@@ -109,10 +108,10 @@ class DivisionTest extends LitElement {
   }
 
   keyDownHandler(event) {
-    if (event.code == 'Enter') {
+    console.log(event);
+    if (event.which == 13) {
       this.checkAnswer();
     }
-
   }
 
   firstUpdated(changedProperties) {
