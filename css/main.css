@@ -11,6 +11,9 @@ body {
     margin-left: 1.5rem;
     min-height: 100vh;
     padding-left: 1.5rem;
+
+    /* Temporary fix for appendChild scrolling */
+    padding-bottom: 10rem;
 }
 
 @media (min-width: 768px) {

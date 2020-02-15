@@ -37,6 +37,7 @@ function addTest() {
         addTest();
     });
     testsContainer.appendChild(test);
+    // window.scrollTo(0, document.body.scrollHeight);
 }
 
 // Add first test
